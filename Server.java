@@ -8,7 +8,10 @@ import java.net.*;
 {
 	public static void main(String args[]) throws IOException
 	{
-		ServerSocket ss = new ServerSocket(888);
+		BufferedReader brr = new BufferedReader(new InputStreamReader(System.in));
+                System.out.println("Enter The Port Number");
+                int port = Integer.parseInt(brr.readLine());
+		ServerSocket ss = new ServerSocket(port);
 		Socket s = ss.accept();    //server wait till a client accepts connection
 		System.out.println("Connection Established");
 		PrintStream ps = new PrintStream(s.getOutputStream());  //to send data till the socket,socket to send data to client(getoutputStream method) 
