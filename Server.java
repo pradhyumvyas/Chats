@@ -12,6 +12,7 @@ import java.net.*;
                 System.out.println("Enter The Port Number");
                 int port = Integer.parseInt(brr.readLine());
 		ServerSocket ss = new ServerSocket(port);
+		
 		Socket s = ss.accept();    //server wait till a client accepts connection
 		System.out.println("Connection Established");
 		PrintStream ps = new PrintStream(s.getOutputStream());  //to send data till the socket,socket to send data to client(getoutputStream method) 
