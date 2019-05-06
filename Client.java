@@ -4,10 +4,7 @@ import java.net.*;
  *
  * @author Pradhyum
  */
-/**
- *
- * @author Aniruddh Parwal
- */
+
 public class Client
 {
 	public static void main(String args[]) throws IOException
